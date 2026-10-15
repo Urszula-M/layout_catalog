@@ -5,7 +5,10 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  transition: transform 300ms ease;
+  transition:
+    transform 300ms ease,
+    background-color 300ms ease,
+    border 300ms ease;
 
   &__image {
     width: 160px;
@@ -20,7 +23,7 @@
     line-height: 18px;
     color: $color-main;
     margin-bottom: 4px;
-    transition: transform 300ms ease;
+    transition: color 300ms;
   }
 
   &__code {
@@ -91,9 +94,6 @@
 
   &:hover {
     transform: scale(1.2);
-    background-color: $color-white;
-    border: 1px solid $primary-button-color;
-    color: $primary-button-color;
   }
 
   &:hover &__title {
